@@ -1,0 +1,23 @@
+body {
+    background-color:deepskyblue ; 
+    color:#000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+p, a {
+    font-size: 24px;
+}
+
+a {
+    color: red;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto;
+}
