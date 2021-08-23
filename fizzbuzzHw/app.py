@@ -20,5 +20,28 @@ def fizzbuzz(count_to):
         
     return render_template('home.html', numbers=n, l=l)
 
+@app.route('/words/<string:word>')
+def words(word):
+
+    anagrams_list=[]
+    
+    w = open('words.txt')
+    word_list = w.read().splitlines()
+    real_word = word.upper() in word_list
+    
+    a =sorted(word.upper())
+
+    for an in word_list:
+        if sorted(an) == a:
+            anagrams_list.append(an)
+
+    return render_template('words.html', word=word, word_list=word_list, real_word=real_word, anagrams_list=anagrams_list)
+
+
+    
+
+  
+
+
     
 

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+
+</head>
+
+<body>
+
+    {% if real_word %}
+        {% if anagrams_list %}
+        <ul>
+            {% for item in  anagrams_list %}
+                <li>{{item}}</li>
+            {% endfor %}
+        </ul>
+
+        {% endif %}
+
+    {% else %}
+        <h1> There are no anagrams for this word </h1>
+    {% endif %}
+
+    
+    
+
+</body> 
